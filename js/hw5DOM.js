@@ -33,9 +33,13 @@ imgNew.alt = 'like';
 
 
 // task 4
-const firstLi = document.querySelector('p');
+const firstLi = document.querySelector('ul');
 
 // console.log(firstLi);
 
-firstLi.textContent = 'new Text';
+const item = firstLi.firstElementChild;
+
+
+
+item.textContent = 'new Text';
 
