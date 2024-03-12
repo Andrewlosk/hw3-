@@ -61,21 +61,24 @@ const text = document.getElementById('text');
 range.addEventListener('input', () => {
     const inpValue = range.value
 
-
-    // console.log(inpValue);
-    // if (inpValue == 0) {
-    //     text.style.fontSize = '10px';
-    // } else if (inpValue == 33) {
-    //     text.style.fontSize = '20px';
-    // } else if (inpValue == 66) {
-    //     text.style.fontSize = '30px';
-    // } else if (inpValue == 100) {
-    //     text.style.fontSize = '100px';
-    // }
-
     text.style.fontSize = inpValue + 'px';
 
 
 });
 
 
+// ========
+const inp = document.getElementById('validation-input1');
+const inputNew = document.getElementById('validation-input2');
+const btn = document.querySelector('.check')
+
+function checkInp(){
+    if (inp.value && inputNew.value) {
+        console.log('dffd')
+        alert('alles gut');
+    }else{
+        alert('not gut');
+    }
+
+};
+btn.addEventListener('click', checkInp)
