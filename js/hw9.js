@@ -198,11 +198,86 @@ btnCalc.addEventListener('click', calculate)
 
 
 
+// =======================
+// Змінна lang може приймати 4 значення: 'ua', 'en', 'ru', 'fr'. За допомогою конструкції switch виведи на екран назву місяця в залежності від обраної мови. Наприклад, якщо lang = 'fr', то в консоль виводимо "Janvier".
 
-// console.log(typeof firstNum);
-// console.log(typeof secondNum);
 
-// btnCalc.addEventListener ('click', () => {
-//     console.log(+firstNum.value);
-//     console.log(one + two);
-// })
+const lang = prompt(`lang`);
+let month = +prompt("num of month");
+
+switch (lang) {
+    case 'ua':
+        switch (month) {
+            case 1:
+                alert('січень');
+                break;
+            case 2:
+                alert('лютий');
+                break;
+            case 3:
+                alert('березень');
+                break;
+            default:
+                alert('not correct')
+                break;
+
+        }
+        break;
+
+
+        
+    case 'en':
+        switch (month) {
+            case 1:
+                alert('january');
+                break;
+            case 2:
+                alert('February');
+                break;
+            case 3:
+                alert('March');
+                break;
+            default:
+                alert('not correct')
+                break;    
+                                               
+        } 
+        break;
+    case 'ru':
+        switch (month) {
+            case 1:
+                alert('січень)');
+                break;
+            case 2:
+                alert('лютий))');
+                break;
+            case 3:
+                alert('березень)))');
+                break;
+            default:
+                alert('not correct')
+                break;    
+                                               
+        } 
+        break;
+    case 'fr':
+        switch (month) {
+            case 1:
+                alert('janvier');
+                break;
+            case 2:
+                alert('février');
+                break;
+            case 3:
+                alert('mars');
+                break;
+            default:
+                alert('not correct')
+                break;    
+                                               
+        } 
+        break;
+    default:
+        alert('not correct')
+        break;                 
+    }
