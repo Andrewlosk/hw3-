@@ -85,3 +85,23 @@ while (number < 20) {
         console.log(number);
     }
 }
+
+
+// пірамідка
+
+const lines = 6;
+let result = '';
+
+
+for (let i = 0; i <= lines; i++) {
+    for (let g = 0; g < lines-i; g++){
+        result += " ";
+    }
+    for (let g = 0; g <  2 * i + 1; g++) {
+        result += '*'
+    }
+    result+='\n'
+}
+
+console.log(result);
+
