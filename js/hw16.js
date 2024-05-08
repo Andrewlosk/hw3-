@@ -127,6 +127,7 @@ const products = [
     {name: 'cucumber', price: 4, number: 10},
     {name: 'apple', price: 10, number: 40},
     {name: 'carrot', price: 4, number: 60}
+    
 ]
 
 const calculateTotalPrice = function(allProdcuts, productName) {
