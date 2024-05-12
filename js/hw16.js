@@ -142,3 +142,86 @@ const calculateTotalPrice = function(allProdcuts, productName) {
 
 
 console.log(calculateTotalPrice(products, 'carrot'));
+
+
+
+
+
+
+
+//! деструктуризація 
+
+// 1
+const {hobby, premium, mood} = user
+console.log(hobby, premium, mood);
+
+
+
+
+//2
+
+const {andrii: user1, ivan: user2, dima: user3, maks: user4} = employees
+console.log(user1, user2, user3, user4);
+
+
+
+// 3
+
+const {andrii: andriiSalary, ivan: ivanSalary, dima: dimaSalary, maks: maksSalary} = employeesSalary
+console.log(andriiSalary, ivanSalary, dimaSalary, maksSalary);
+
+
+
+
+// 4
+
+
+const [
+    {
+        name: name1,
+        age: age1
+    },
+    {
+        name: name2,
+        age: age2
+    },
+    {
+        name: name3,
+        age: age3
+    }
+
+] = users
+
+
+console.log(name1, name2, name3, age1, age2, age3);
+
+//5
+
+
+
+
+const [
+    {
+        name: productName1,
+        price: productPrice1,
+        number: productNumber1
+    },
+    {
+        name: productName2,
+        price: productPrice2,
+        number: productNumber2
+    },
+    {
+        name: productName3,
+        price: productPrice3,
+        number: productNumber3
+    }   
+] = products
+
+console.log(productName1, productName2, productName3, productPrice1, productPrice2, productPrice3, productNumber1, productNumber2, productNumber3);
+
+
+
+
+
+
