@@ -3,8 +3,18 @@ const images = document.querySelectorAll('.image');
 
 let currentImageIndex = 0;
 
-// Додаємо обробник події для нажаття клавіш
+
+
+
 gallery.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight'){
+        currentImageIndex += 10;
+        gallery.style.transform = `translateX(${currentImageIndex}px)`
+    } else if (event.key === 'ArrowLeft') {
+        currentImageIndex -= 10;
+        gallery.style.transform = `translateX(${currentImageIndex}px)`
+    }
+
 });
 
 
