@@ -23,18 +23,20 @@ const box = document.getElementById('box');
 
 
 const handleMouseMove = (e) => {
-  const offsetXY = document.getBoundingClientRect();
+
+  const offsetXY = document.body.getBoundingClientRect();
   const x = e.clientX-offsetXY.left;
   const y = e.clientY-offsetXY.top;
   box.style.left = x + 'px';
   box.style.top = y + 'px';
+  
 }
 
 
 
 
-document.addEventListener('mousemove', _.debounce(() => {
-  handleMouseMove()
+document.addEventListener('mousemove', _.debounce((e) => {
+  handleMouseMove(e)
 }, 100))
 
 
