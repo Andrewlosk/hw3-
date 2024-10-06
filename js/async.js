@@ -1,18 +1,18 @@
 //!task1
 
-// let counter = 0
+let counter = 0
 
-// const interval1 = setInterval(() => {
-//     alert('message')
-//     counter++
-//     console.log(counter);
+const interval1 = setInterval(() => {
+    alert('message')
+    counter++
+    console.log(counter);
 
-//     if (counter === 5) {
-//         clearInterval(interval1)
+    if (counter === 5) {
+        clearInterval(interval1)
         
-//     }
+    }
     
-// }, 1000)
+}, 1000)
 
 
 
