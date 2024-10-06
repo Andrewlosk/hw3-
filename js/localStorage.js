@@ -173,7 +173,7 @@ const renderBookmarks = () => {
         bookmarkList.appendChild(li)
         const deleteBtn = li.querySelector('#delete')
         deleteBtn.addEventListener('click', (index) => {
-            // li.remove()
+           
 
             
             const bookmarks = getBookmarks();
