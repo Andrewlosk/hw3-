@@ -1,0 +1,88 @@
+* {
+    font-family: Agdasima; 
+}
+
+body {
+   background-color: #ededed; 
+}
+
+.timer {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    gap: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* font-family: Agdasima; */
+    font-size: 40px;
+    font-weight: 700;
+    border: 3px dashed black;
+    border-radius: 3%;
+    padding: 10px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.setDate {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100px;
+    align-items: center;
+}
+.dateInp {
+    font-family: Agdasima;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    width: 150px;
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #d9dadb;
+}
+
+.dashed {
+    --b: 5px;  /* border thickness */
+    --s: 30px; /* size of the dashes */
+    --c1: black;
+    --c2: grey;
+    
+    /* width: 160px; */
+    aspect-ratio: 1;
+    position: relative;
+  }
+  .dashed::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    padding: var(--b);
+    background: 
+      repeating-conic-gradient(var(--c1) 0 25%,var(--c2) 0 50%) 
+      0 0/var(--s) var(--s) round;
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+  
+  
+  
+.btn {
+    border: none;
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #d9dadb;
+
+}
